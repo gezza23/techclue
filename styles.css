@@ -1,0 +1,116 @@
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+    --color-primary: #384b70;
+    --color-secondary: #507687;
+    --color-tertiary: #fcfaee;
+    --color-fourth: #b8001f;
+    --color-fifth: rgba(36, 36, 36, 0.8);
+    --font-slab: "Roboto Slab", serif;
+    --font-roboto: "Roboto", sans-serif;
+  }
+
+body {
+  font-family: var(--font-roboto);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-tertiary);
+}
+
+h1 {
+  font-family: var(--font-slab)
+}
+
+header {
+  background-color: var(--color-tertiary);
+  color: #f4f6ff;
+  padding: 20px 0;
+  text-align: center;
+}
+.header {
+  background-color: var(--color-fourth)
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--color-tertiary);
+}
+
+main {
+  padding: 20px;
+}
+p {
+    color: var(--color-tertiary);
+}
+
+article {
+  background: var(--color-primary);
+  padding: 15px;
+  margin: 2rem 5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-btn {
+    color: var(--color-fifth);
+    font-size: 1rem;
+    margin-bottom: 20rem;
+}
+
+article h2 {
+  margin-top: 0;
+  font: "Robot", "serif";
+  color: black;
+}
+
+.meta {
+  font-size: 1em;
+  color: var(--color-fifth);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: var(--color-fourth);
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+
+    article {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+}
